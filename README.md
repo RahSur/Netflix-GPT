@@ -4,22 +4,15 @@ A responsive Netflix clone built with React.js that displays movies and TV shows
 
 ## 🚀 Demo
 
-Check out the live demo here: [Netflix Clone Live](https://your-netflix-clone-demo-link.com)
+Check out the live demo here: [Netflix Clone Live](https://nettflix-gpt.web.app/)
 
 ## 🛠 Tech Stack
 
 - ⚛️ React
-- 📦 Axios
-- 🎨 CSS / SCSS
+- 🎨 Tailwind
 - 🍿 TMDB API
 - 🔄 React Router (optional for multi-page views)
 - 🔐 Firebase Auth (optional for login functionality)
-
-## 📸 Screenshots
-
-| Home Page                       | Movie Modal                       |
-| ------------------------------- | --------------------------------- |
-| ![Home](./screenshots/home.png) | ![Modal](./screenshots/modal.png) |
 
 ## 📦 Features
 
@@ -35,6 +28,6 @@ Check out the live demo here: [Netflix Clone Live](https://your-netflix-clone-de
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/netflix-clone.git
-cd netflix-clone
+git clone https://github.com/RahSur/Netflix-GPT.git
+cd Netflix-GPT
 ```
