@@ -1,12 +1,40 @@
-# React + Vite
+# 🎬 Netflix Clone (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Netflix clone built with React.js that displays movies and TV shows fetched from the [TMDB API](https://www.themoviedb.org/documentation/api). It mimics the UI and UX of the original Netflix app, including features like movie rows, banners, trailers, and modals.
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live demo here: [Netflix Clone Live](https://your-netflix-clone-demo-link.com)
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React
+- 📦 Axios
+- 🎨 CSS / SCSS
+- 🍿 TMDB API
+- 🔄 React Router (optional for multi-page views)
+- 🔐 Firebase Auth (optional for login functionality)
+
+## 📸 Screenshots
+
+| Home Page                       | Movie Modal                       |
+| ------------------------------- | --------------------------------- |
+| ![Home](./screenshots/home.png) | ![Modal](./screenshots/modal.png) |
+
+## 📦 Features
+
+- 🔍 Fetch and display movies from TMDB
+- 🎥 Movie trailer on hover or click (using YouTube embeds)
+- 📺 Responsive movie rows by categories (Trending, Top Rated, Originals, etc.)
+- 🖼 Dynamic banner with random featured content
+- 🌙 Dark theme Netflix-like design
+- 🔐 (Optional) User authentication via Firebase
+
+## 🧰 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/netflix-clone.git
+cd netflix-clone
+```
