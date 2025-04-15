@@ -1,5 +1,6 @@
-# 🎬 Netflix Clone (React)
+# 🎬 Netflix GPT (React)
 
+Developed by Rahul 
 A responsive Netflix clone built with React.js that displays movies and TV shows fetched from the [TMDB API](https://www.themoviedb.org/documentation/api). It mimics the UI and UX of the original Netflix app, including features like movie rows, banners, trailers, and modals.
 
 ## 🚀 Demo
