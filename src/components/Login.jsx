@@ -1,5 +1,4 @@
 import React, {useState, useRef} from 'react'
-import { useNavigate } from 'react-router-dom';
 import Header from './Header'
 import { validateData } from '../utils/validateData';
 import { auth } from '../utils/firebase';
@@ -10,7 +9,6 @@ import { useDispatch } from 'react-redux';
 const Login = () => {
     const [isLogin, setisLogin] = useState(true);
     const [error, setError] = useState("");
-    const navigate = useNavigate();
     const dispatch = useDispatch();
 
     const email = useRef(null);
@@ -36,7 +34,6 @@ const Login = () => {
                     }).then(() => {
                         const {uid, email, displayName} = auth.currentUser;
                         dispatch(addUser({uid:uid,email:email,displayName:displayName}));
-                        navigate("/browse");
                     }).catch((error) => {
                      console.log(error);
                 });
@@ -52,7 +49,6 @@ const Login = () => {
                 //Signed In
                 const user = userCredential.user;
                 console.log(user);
-                navigate("/browse");
             })
             .catch((error) => {
                 const errorCode = error.code;
