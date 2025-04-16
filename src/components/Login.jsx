@@ -5,6 +5,7 @@ import { auth } from '../utils/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile  } from "firebase/auth";
 import { addUser } from '../utils/userSlice';
 import { useDispatch } from 'react-redux';
+import { HOME_BANNER } from '../utils/constants';
 
 const Login = () => {
     const [isLogin, setisLogin] = useState(true);
@@ -62,7 +63,7 @@ const Login = () => {
         <>
         <Header />
         <div className="absolute">
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/fa4630b1-ca1e-4788-94a9-eccef9f7af86/web/IN-en-20250407-TRIFECTA-perspective_43f6a235-9f3d-47ef-87e0-46185ab6a7e0_large.jpg" alt="home banner"/>
+            <img src={HOME_BANNER} alt="home banner"/>
         </div>
         <form onSubmit={(e)=>e.preventDefault()} className="w-3/12 absolute p-12 bg-black my-32 mx-auto right-0 left-0 rounded-lg opacity-80">
             <h1 className="font-bold text-3xl pb-4 text-white">{isLogin ? "Sign In" : "Sign Up"}</h1>
@@ -71,7 +72,7 @@ const Login = () => {
             <input required ref={password} className="p-4 my-4 text-black w-full bg-gray-600" type="password" placeholder="Password" />
             <p className='text-red-500'>{error}</p>
             <button className="p-2 my-6 w-full text-white bg-red-700 rounded-lg cursor-pointer" onClick={handleClick}>{isLogin ? "Sign In" : "Sign Up"}</button>
-            <p className="text-white cursor-pointer" onClick={handleSign}>{isLogin ? "New to Netflix ? Sign Up now" : "Already Registered, Sign In!"}</p>
+            <p className="text-white cursor-pointer" onClick={handleSign}>{isLogin ? "New to Netflix ? Sign Up now." : "Already Registered ? Sign In!"}</p>
         </form>
         </>
     )
